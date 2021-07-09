@@ -61,7 +61,7 @@ public class bigramProcess {
     return arr;
   }
 
-  public static String extractWords(String inputText, Locale currentLocale) { // From tutorial
+  public static String extractWords(String inputText, Locale currentLocale) { 
     ArrayList wordList = new ArrayList();
     Locale SpanLocale = new Locale("es", "ES"); // Needed for region
     BreakIterator wordIterator = BreakIterator.getWordInstance(currentLocale); // use locale
@@ -134,7 +134,7 @@ public class bigramProcess {
     return txtFiles;
   }
 
-  public static void deleteFiles() { // delet existing models
+  public static void deleteFiles() { // delete existing models
     try {
       File folder = new File(models);
       File[] listOfFiles = folder.listFiles();
